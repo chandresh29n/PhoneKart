@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PhoneKart - Discover and shop premium smartphones at amazing prices.">
+    <meta name="theme-color" content="#090b13">
+
+    <title>PhoneKart | Premium Smartphone Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="announcement">
+        ✦ FREE DELIVERY ON ORDERS ABOVE ₹25,000 ✦
+    </div>
+
+    <header class="navbar">
+        <a href="#" class="logo">Phone<span>Kart.</span></a>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#products">Shop</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="icon-btn" id="searchToggle" aria-label="Search">
+                <i data-lucide="search"></i>
+            </button>
+
+            <button class="icon-btn cart-trigger" id="cartToggle" aria-label="Shopping cart">
+                <i data-lucide="shopping-bag"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+            <button class="login-btn" id="loginOpen">Sign In</button>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="hero-content">
+                <span class="eyebrow">
+                    <span class="live-dot"></span>
+                    THE FUTURE IS IN YOUR HANDS
+                </span>
+
+                <h1>
+                    Upgrade your
+                    <span>world.</span>
+                </h1>
+
+                <p>
+                    Discover the latest smartphones.
+                    Experience technology without limits.
+                    Find your perfect device at PhoneKart.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="primary-btn">
+                        Explore Collection
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                    <a href="#about" class="secondary-btn">
+                        Discover More
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>20+</strong>
+                        <small>Smartphones</small>
+                    </div>
+                    <div>
+                        <strong>10+</strong>
+                        <small>Top Brands</small>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <small>Quality Focus</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-orbit orbit-one"></div>
+                <div class="hero-orbit orbit-two"></div>
+
+                <div class="hero-product">
+                    <span class="hero-tag">NEW COLLECTION</span>
+                    <img
+                        src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=900&auto=format&fit=crop&q=85"
+                        alt="Premium smartphone"
+                    >
+                </div>
+
+                <div class="floating-card floating-top">
+                    <i data-lucide="zap"></i>
+                    <div>
+                        <strong>Next Gen</strong>
+                        <small>Technology</small>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-bottom">
+                    <i data-lucide="truck"></i>
+                    <div>
+                        <strong>Fast Delivery</strong>
+                        <small>At your doorstep</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits">
+            <div class="benefit">
+                <i data-lucide="truck"></i>
+                <div>
+                    <strong>Free Shipping</strong>
+                    <small>On eligible orders</small>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i data-lucide="shield-check"></i>
+                <div>
+                    <strong>Quality First</strong>
+                    <small>Product information</small>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i data-lucide="refresh-cw"></i>
+                <div>
+                    <strong>Easy Returns</strong>
+                    <small>Demo store policy</small>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i data-lucide="headset"></i>
+                <div>
+                    <strong>Customer Support</strong>
+                    <small>We're here to help</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section class="categories section" id="categories">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">EXPLORE BY BRAND</span>
+                    <h2>Find your <span>style.</span></h2>
+                </div>
+            </div>
+
+            <div class="category-list">
+                <button class="category-card active" data-category="all">
+                    <i data-lucide="smartphone"></i>
+                    <span>All Phones</span>
+                </button>
+
+                <button class="category-card" data-category="Apple">
+                    <i data-lucide="apple"></i>
+                    <span>Apple</span>
+                </button>
+
+                <button class="category-card" data-category="Samsung">
+                    <i data-lucide="smartphone"></i>
+                    <span>Samsung</span>
+                </button>
+
+                <button class="category-card" data-category="OnePlus">
+                    <i data-lucide="zap"></i>
+                    <span>OnePlus</span>
+                </button>
+
+                <button class="category-card" data-category="Google">
+                    <i data-lucide="smartphone"></i>
+                    <span>Google Pixel</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="products-section section" id="products">
+
+            <div class="section-heading product-heading">
+                <div>
+                    <span class="eyebrow">CURATED FOR YOU</span>
+                    <h2>Trending <span>devices.</span></h2>
+                    <p>Explore our smartphone collection.</p>
+                </div>
+
+                <div class="product-controls">
+                    <div class="search-box" id="searchBox">
+                        <i data-lucide="search"></i>
+                        <input type="search" id="searchInput" placeholder="Search phones...">
+                    </div>
+
+                    <select id="sortSelect" aria-label="Sort products">
+                        <option value="featured">Featured</option>
+                        <option value="low">Price: Low to High</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="name">Name: A to Z</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+
+            <p class="empty-message hidden" id="emptyMessage">
+                No smartphones found. Try another search.
+            </p>
+        </section>
+
+        <!-- PROMO -->
+        <section class="promo-section section">
+            <div class="promo-content">
+                <span class="eyebrow">SMARTER SHOPPING STARTS HERE</span>
+                <h2>Your next upgrade<br>is waiting.</h2>
+                <p>Find a smartphone that matches your lifestyle.</p>
+                <a href="#products" class="primary-btn">
+                    Shop Now <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="promo-decoration">
+                <i data-lucide="smartphone"></i>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section section" id="about">
+            <span class="eyebrow">WHY PHONEKART?</span>
+            <h2>Technology meets <span>simplicity.</span></h2>
+            <p>
+                PhoneKart is a modern smartphone shopping experience
+                designed to make discovering, comparing and purchasing
+                your next device simple and convenient.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div>
+            <a href="#" class="logo">Phone<span>Kart.</span></a>
+            <p>Your technology. Your choice. Your PhoneKart.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 PhoneKart. Built as an E-Commerce Capstone Project.
+        </p>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div class="overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+        <div class="drawer-header">
+            <div>
+                <h2>Your Cart</h2>
+                <small id="cartSubtitle">0 items</small>
+            </div>
+
+            <button class="close-btn" id="cartClose" aria-label="Close cart">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-footer">
+            <div class="cart-total-line">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">₹0</strong>
+            </div>
+
+            <div class="cart-total-line">
+                <span>Delivery</span>
+                <strong id="cartDelivery">FREE</strong>
+            </div>
+
+            <div class="cart-total-line grand-total">
+                <span>Total</span>
+                <strong id="cartTotal">₹0</strong>
+            </div>
+
+            <button class="primary-btn checkout-btn" id="checkoutOpen">
+                Proceed to Checkout
+                <i data-lucide="arrow-right"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- LOGIN MODAL -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal">
+            <button class="close-btn modal-close" data-close="loginModal" aria-label="Close">
+                <i data-lucide="x"></i>
+            </button>
+
+            <span class="eyebrow">WELCOME TO PHONEKART</span>
+            <h2 id="authTitle">Welcome back.</h2>
+            <p>Sign in to explore your shopping experience.</p>
+
+            <form id="authForm">
+                <label for="authName" id="nameLabel" class="hidden">Full Name</label>
+                <input id="authName" class="form-input hidden" placeholder="Your name">
+
+                <label for="authEmail">Email Address</label>
+                <input id="authEmail" class="form-input" type="email" placeholder="name@example.com" required>
+
+                <label for="authPassword">Password</label>
+                <input id="authPassword" class="form-input" type="password" placeholder="Enter password" minlength="4" required>
+
+                <button class="primary-btn full-btn" type="submit" id="authSubmit">
+                    Sign In
+                </button>
+            </form>
+
+            <p class="auth-switch">
+                <span id="authSwitchText">New to PhoneKart?</span>
+                <button id="authSwitch">Create Account</button>
+            </p>
+
+            <small class="demo-note">
+                Demo authentication only. Do not enter real passwords.
+            </small>
+        </div>
+    </div>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal-overlay" id="checkoutModal">
+        <div class="modal checkout-modal">
+            <button class="close-btn modal-close" data-close="checkoutModal" aria-label="Close">
+                <i data-lucide="x"></i>
+            </button>
+
+            <span class="eyebrow">ALMOST THERE</span>
+            <h2>Complete your order.</h2>
+            <p>Enter your details for this demo checkout.</p>
+
+            <div class="checkout-summary" id="checkoutSummary"></div>
+
+            <form id="checkoutForm">
+                <label for="customerName">Full Name</label>
+                <input id="customerName" class="form-input" required placeholder="Your full name">
+
+                <label for="customerEmail">Email</label>
+                <input id="customerEmail" class="form-input" type="email" required placeholder="Your email">
+
+                <label for="customerPhone">Phone Number</label>
+                <input id="customerPhone" class="form-input" type="tel" pattern="[0-9]{10}" maxlength="10" required placeholder="10-digit mobile number">
+
+                <label for="customerAddress">Delivery Address</label>
+                <textarea id="customerAddress" class="form-input" rows="3" required placeholder="House number, street, city, PIN code"></textarea>
+
+                <label for="paymentMethod">Payment Method</label>
+                <select id="paymentMethod" class="form-input">
+                    <option value="Cash on Delivery">Cash on Delivery (Demo)</option>
+                    <option value="UPI (Simulated)">UPI (Simulated)</option>
+                    <option value="Card (Simulated)">Card (Simulated)</option>
+                </select>
+
+                <button type="submit" class="primary-btn full-btn">
+                    Place Demo Order
+                    <i data-lucide="check-circle"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ORDER SUCCESS -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal success-modal">
+            <div class="success-icon">
+                <i data-lucide="check"></i>
+            </div>
+            <span class="eyebrow">ORDER CONFIRMED</span>
+            <h2>Thank you!</h2>
+            <p id="successMessage">Your demo order has been placed successfully.</p>
+            <button class="primary-btn full-btn" id="continueShopping">
+                Continue Shopping
+            </button>
+        </div>
+    </div>
+
+    <!-- ORDER HISTORY -->
+    <div class="modal-overlay" id="ordersModal">
+        <div class="modal">
+            <button class="close-btn modal-close" data-close="ordersModal" aria-label="Close">
+                <i data-lucide="x"></i>
+            </button>
+            <span class="eyebrow">YOUR PURCHASES</span>
+            <h2>Order History</h2>
+            <div id="orderHistory" class="order-history"></div>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
