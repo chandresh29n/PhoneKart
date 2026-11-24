@@ -77,6 +77,15 @@ const products = [
         badge: "AI PHONE",
         description: "Tensor G4 | 128GB | 5G",
         image: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=700&auto=format&fit=crop&q=85"
+    },
+    {
+        id: 9,
+        name: "Motorola edge 70 fusion 5g",
+        brand: "Motorola",
+        price: 29999,
+        badge: "VALUE PICK",
+        description: "Sd 7s gen 4 | 8+128 | 5G",
+        image: "https://motorolain.vtexassets.com/arquivos/ids/162592-800-auto?width=800&height=auto&aspect=true"
     }
 ];
 
