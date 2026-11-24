@@ -564,7 +564,13 @@ document.getElementById("authForm").addEventListener("submit", event => {
 
     isRegistering = false;
 
-    document.getElementById("authSwitch").click();
+    document.getElementById("authTitle").textContent = "Welcome back.";
+    document.getElementById("authSubmit").textContent = "Sign In";
+    document.getElementById("authSwitchText").textContent = "New to PhoneKart?";
+    document.getElementById("authSwitch").textContent = "Create Account";
+    document.getElementById("authName").classList.add("hidden");
+    document.getElementById("nameLabel").classList.add("hidden");
+    document.getElementById("authName").required = false;
 });
 
 // CHECKOUT
